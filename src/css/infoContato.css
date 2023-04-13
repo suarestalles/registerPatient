@@ -1,0 +1,17 @@
+.endereco {
+    display: flex;
+    justify-content: space-between;
+}
+.enderecoCidade {
+    width: 75%;
+}
+.cep {
+    width: 20%;
+}
+.telefone {
+    display: flex;
+    flex-direction: column;
+}
+#telefone {
+    width: 20%;
+}

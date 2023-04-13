@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./src/image/health-svgrepo-com.svg" alt="Ícone de Saúde">
+        <h1>CADASTRO DE PACIENTE</h1>
+    </header>
+    <section class="formulario">
+        <form action="#" method="POST">
+            <div class="dadosPessoais div-secao">
+                <div class="informacoesPessoais">
+                    <h1>INFORMAÇÕES PESSOAIS</h1>
+                    <div class="nome">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="input" name="nome" id="nome" placeholder="Nome do paciente" required>
+                    </div>
+                    <div class="dadosPais">
+                        <label for="nomePai">Nome do Pai:</label>
+                        <input type="text" class="input" name="nome" id="nome" placeholder="Nome do pai do paciente (Caso não houver, preencha com '-')" required>
+            
+                        <label for="nomeMae">Nome da Mãe:</label>
+                        <input type="text" class="input" name="nome" id="nome" placeholder="Nome da mãe do paciente" required>
+                    </div>
+                    <div class="dadosPessoais2">
+                        <div class="idade">
+                            <label for="idade">Idade:</label>
+                            <input type="number" class="input" name="idade" id="idade" min="0" max="120" required>
+                        </div>
+                        
+                        <div class="sexo">
+                            <label class="labelRadio" for="sexo">Sexo:</label>
+                            <div class="sexoOpcoes">
+                                <label for="feminino">
+                                    <input type="radio" class="inputRadio" name="sexo" id="feminino">F
+                                </label>
+                                
+                                <label for="masculino">
+                                    <input type="radio" class="inputRadio" name="sexo" id="masculino">M
+                                </label>
+                            </div>
+                            
+                        </div>
+            
+                        <div class="raca">
+                            <label for="racaCor" class="labelRadio">Raça/Cor:</label>
+                            <div class="racaCorOpcoes">
+                                <label for="amarelo">
+                                    <input type="radio" class="inputRadio" name="racaCor" id="amarelo">Amarelo
+                                </label>
+                                <label for="branco">
+                                    <input type="radio" class="inputRadio" name="racaCor" id="branco">Branco
+                                </label>
+                                <label for="indigena">
+                                    <input type="radio" class="inputRadio" name="racaCor" id="indigena">Indígena
+                                </label>
+                                <label for="pardo">
+                                    <input type="radio" class="inputRadio" name="racaCor" id="pardo">Pardo
+                                </label>
+                                <label for="preto">
+                                    <input type="radio" class="inputRadio" name="racaCor" id="preto">Preto
+                            </div>
+                        </div>
+            
+                        <div class="massa">
+                            <label for="kg">Massa (Peso) do Paciente:</label>
+                            <div class="massaCampos">
+                                <input type="number" class="input" name="kg" id="kg" min="0" max="300" placeholder="Quilos" required>
+                                <input type="number" class="input" name="grama" id="grama" min="0" maxlength="3" placeholder="Gramas" required>
+                            </div>
+                        </div>
+                        
+                        <div class="altura">
+                            <label for="altura">Altura do Paciente(cm):</label>
+                            <input type="number" class="input" name="altura" id="altura" min="0" max="220" maxlength="3" placeholder="Ex.: 173" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+
+            <div class="dadosContato div-secao">
+                <div class="informacoesContato">
+                    <h1>INFORMAÇÕES DE CONTATO</h1>
+                    <div class="dadosContato">
+                        <div class="endereco">
+                            <div class="enderecoCidade">
+                                <label for="endereco">Endereço:</label>
+                                <input type="text" class="input" name="endereco" id="endereco" placeholder="Rua, Número da Casa, QD e LT (se tiver) e Setor/Bairro" required>
+                            </div>
+                
+                            <div class="cep">
+                                <label for="cep">CEP:</label>
+                                <input type="number" class="input" name="cep" id="cep" placeholder="Ex.: 75800000" maxlength="8" required>
+                            </div>
+                        </div>
+
+                        <div class="telefone">
+                            <label for="telefone">Telefone:</label>
+                            <input type="number" class="input" name="telefone" id="telefone" placeholder="Ex.: 64988776655" maxlength="11" required>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+            <div class="saude div-secao">
+                <div class="informacoesPlano">
+                    <h1>INFORMAÇÕES DO PLANO DE SAÚDE</h1>
+                    <div class="planoOpcoes">
+                        <label for="planoSaude">Possui Plano de Saúde?</label>
+                        <label for="planoSim">
+                            <input type="radio" class="inputRadio" name="planoSaude" id="planoSim">Sim
+                        </label>
+                        <label for="planoNao">
+                            <input type="radio" class="inputRadio" name="planoSaude" id="planoNao">Não
+                        </label>
+                    </div>
+                    
+                    <div class="dadosPlanoSaude" id="dadosPlanoSaude">
+                    </div>
+                </div>
+            </div>
+
+            <div class="atendimento div-secao">
+                <div class="informacoesAtendimento">
+                    <h1>INFORMAÇÕES DO ATENDIMENTO</h1>
+                    <div class="dadosAtendimento">
+                        <label for="prontuario">Número do Prontuário:
+                            <input type="number" class="input" name="prontuario" id="prontuario" placeholder="Ex.: 0000001527" required>
+                        </label>
+            
+                        <label for="senhaPainel">Senha para Atendimento:
+                            <input type="number" class="input" name="senhaPainel" id="senhaPainel" required>
+                        </label>
+            
+                        <label for="dataHoraAtendimento">Data/Hora do Atendimento:
+                            <input type="datetime-local" class="input" name="dataHoraAtendimento" id="dataHoraAtendimento" required>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button class="btnSalvar" id="btnSalvar">Salvar</button>
+        </form>
+        <button class="btnCancelar" id="btnCancelar">Cancelar</button>
+    </section>
+
+    <script src="./src/script.js"></script>
+
+</body>
+</html>

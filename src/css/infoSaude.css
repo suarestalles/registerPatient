@@ -1,0 +1,15 @@
+.saude {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.dadosPlanoSaude {
+    display: flex;
+    justify-content: space-around;
+    transition: display .5s;
+}
+.dadosPlanoSaude label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}

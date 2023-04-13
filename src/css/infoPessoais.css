@@ -1,0 +1,19 @@
+.dadosPessoais2 {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.idade, .altura, .sexo, .racaCor {
+    display: flex;
+    flex-direction: column;
+}
+.sexoOpcoes, .racaCorOpcoes, .massaCampos, .planoOpcoes {
+    display: flex;
+    flex-direction: column;
+}
+.planoOpcoes {
+    align-items: center;
+}
+.massaCampos #kg {
+    margin-bottom: 5px;
+}
