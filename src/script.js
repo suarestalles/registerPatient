@@ -18,12 +18,6 @@ $planoSim.addEventListener("click", mostrarCamposPlanoSaude)
 $planoNao.addEventListener("click", esconderCamposPlanoSaude)
 $btnCancelar.addEventListener("click", cancelar);
 
-$btnSalvar.addEventListener("click", salvar);
-
-function salvar() {
-    alert("Prontuário número " + document.getElementById("prontuario").value + " salvo com sucesso!");
-}
-
 function mostrarCamposPlanoSaude() {
     $dadosPlanoSaude.innerHTML = $htmlDadosPlanoSaude;
 }
