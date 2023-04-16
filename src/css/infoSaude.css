@@ -3,13 +3,12 @@
     flex-direction: column;
     text-align: center;
 }
-.dadosPlanoSaude {
-    display: flex;
-    justify-content: space-around;
-    transition: display .5s;
-}
-.dadosPlanoSaude label {
+.planoOpcoes label {
     display: flex;
     flex-direction: column;
-    text-align: left;
+}
+.planoOpcoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
